@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/9 | 个人博客</title>
+  <title>左边固定宽度，右边自适应的几种实现方案 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/09/index.html">
+  <meta name="description" content="左边固定宽度，右边自适应的几种实现方案html结构都如下 1234&amp;lt;div class=&quot;wrapper&quot;&amp;gt;    &amp;lt;div class=&quot;left&quot;&amp;gt;22&amp;lt;/div&amp;gt;    &amp;lt;div class=&quot;right&quot;&amp;gt;11&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt; css为了方便去除了margin和padding 1234* &amp;#123;	marg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="左边固定宽度，右边自适应的几种实现方案">
+<meta property="og:url" content="http://yoursite.com/2018/09/10/adapt-title/index.html">
 <meta property="og:site_name" content="个人博客">
+<meta property="og:description" content="左边固定宽度，右边自适应的几种实现方案html结构都如下 1234&amp;lt;div class=&quot;wrapper&quot;&amp;gt;    &amp;lt;div class=&quot;left&quot;&amp;gt;22&amp;lt;/div&amp;gt;    &amp;lt;div class=&quot;right&quot;&amp;gt;11&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt; css为了方便去除了margin和padding 1234* &amp;#123;	marg">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-19T07:27:25.880Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人博客">
+<meta name="twitter:title" content="左边固定宽度，右边自适应的几种实现方案">
+<meta name="twitter:description" content="左边固定宽度，右边自适应的几种实现方案html结构都如下 1234&amp;lt;div class=&quot;wrapper&quot;&amp;gt;    &amp;lt;div class=&quot;left&quot;&amp;gt;22&amp;lt;/div&amp;gt;    &amp;lt;div class=&quot;right&quot;&amp;gt;11&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt; css为了方便去除了margin和padding 1234* &amp;#123;	marg">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -150,130 +154,175 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-adapt-title" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/10/article-title-1/" class="archive-article-date">
-  	<time datetime="2018-09-10T08:50:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/10/article-title-1/">vue-cli项目中获取微信授权</a>
+    <h1 class="article-title" itemprop="name">
+      左边固定宽度，右边自适应的几种实现方案
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/10/article-title/" class="archive-article-date">
+        
+        <a href="/2018/09/10/adapt-title/" class="archive-article-date">
   	<time datetime="2018-09-10T08:50:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/10/article-title/">js深拷贝</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="左边固定宽度，右边自适应的几种实现方案"><a href="#左边固定宽度，右边自适应的几种实现方案" class="headerlink" title="左边固定宽度，右边自适应的几种实现方案"></a>左边固定宽度，右边自适应的几种实现方案</h3><p>html结构都如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"wrapper"</span>&gt;</span><br><span class="line">    &lt;div class=<span class="string">"left"</span>&gt;22&lt;/div&gt;</span><br><span class="line">    &lt;div class=<span class="string">"right"</span>&gt;11&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>css为了方便去除了margin和padding</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">	margin: 0;</span><br><span class="line">	padding: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1、双inline-block实现方案"><a href="#1、双inline-block实现方案" class="headerlink" title="1、双inline-block实现方案"></a>1、双inline-block实现方案</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &#123;</span><br><span class="line">    width: 100vw;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    font-size: 0;  /*去除空格影响*/</span><br><span class="line">    box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line">.wrapper div &#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    box-sizing: border-box;</span><br><span class="line">    height: 100vh;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width: 120px;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    width: calc(100% - 120px);</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2、双float实现方案"><a href="#2、双float实现方案" class="headerlink" title="2、双float实现方案"></a>2、双float实现方案</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &#123;</span><br><span class="line">    width: 100vw;</span><br><span class="line">    height: 100vh;</span><br><span class="line">&#125;</span><br><span class="line">.wrapper div &#123;</span><br><span class="line">    <span class="built_in">float</span>: left;</span><br><span class="line">    height: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width: 120px;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    width: calc(100% - 120px);</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3、float-margin-left实现方案"><a href="#3、float-margin-left实现方案" class="headerlink" title="3、float + margin-left实现方案"></a>3、float + margin-left实现方案</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &#123;</span><br><span class="line">    width: 100vw;</span><br><span class="line">    height: 100vh;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width: 120px;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    background: red;</span><br><span class="line">    <span class="built_in">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    margin-left: 120px;</span><br><span class="line">    background: blue;</span><br><span class="line">    height: 100vh;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4、absolute-margin-left实现方案"><a href="#4、absolute-margin-left实现方案" class="headerlink" title="4、absolute + margin-left实现方案"></a>4、absolute + margin-left实现方案</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &#123;</span><br><span class="line">    width: 100vw;</span><br><span class="line">    height: 100vh;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    width: 120px;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    margin-left: 120px;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5、float-BFC实现方案"><a href="#5、float-BFC实现方案" class="headerlink" title="5、float + BFC实现方案"></a>5、float + BFC实现方案</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &#123;</span><br><span class="line">    width: 100vw;</span><br><span class="line">    height: 100vh;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    <span class="built_in">float</span>: left;</span><br><span class="line">    width: 120px;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    overflow: auto;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6、flex实现方案"><a href="#6、flex实现方案" class="headerlink" title="6、flex实现方案"></a>6、flex实现方案</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &#123;</span><br><span class="line">    width: 100vw;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    display: flex;</span><br><span class="line">    /* flex容器的一个默认属性值:align-items: stretch;。这个属性导致了为了让两个盒子高度自动，需要设置: align-items: flex-start; */</span><br><span class="line">    align-items: flex-start;</span><br><span class="line">&#125;</span><br><span class="line">.left &#123;</span><br><span class="line">    width: 120px;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    flex: 0 0 auto;</span><br><span class="line">    background: red;</span><br><span class="line">&#125;</span><br><span class="line">.right &#123;</span><br><span class="line">    height: 100vh;</span><br><span class="line">    flex: 1 1 auto;</span><br><span class="line">    background: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>以上六种该方案实现，其中1、2方案都是利用calc计算属性来实现右侧自适应，1方案中因为都是inline-block，需要设置font-size： 0;来去除空格影响,不设置会出现两个之间会有间隔，导致右边盒子掉到下一行，第3种方案，左边盒子左浮动，右边盒子不浮动，如果不设置margin-left会导致右边盒子覆盖在左边盒子上面，第4种实现方案与第3种实现方案相同。利用左边盒子脱离文档流设置margin-left。第五种左边浮动，右边如果不设置overflow：auto;不会触发元素的BFC，如果不触发元素的BFC会导致，右边的盒子叠在左边盒子上面，触发元素的BFC后，作用就是让右边的盒子不与左边的盒子重叠。第六种实现用的flex，左边的盒子固定宽，设置flex：0 0 auto或者flex: none;不会根据布局伸缩，右边盒子设置flex: 1 1 auto;为弹性盒子，充满剩余部分，还有就是父级盒子设置align-items: flex-start;是因为flex容器的一个默认属性值:align-items: stretch;。这个属性导致了为了让两个盒子高度自动，需要设置: align-items: flex-start;</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/09/10/adapt-title/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/10/adapt-title/" class="archive-article-date">
-  	<time datetime="2018-09-10T08:50:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/09/10/article-title/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          js深拷贝
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/10/adapt-title/">左边固定宽度，右边自适应的几种实现方案</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/10/hello-world/" class="archive-article-date">
-  	<time datetime="2018-09-10T08:34:30.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/10/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -296,8 +345,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
