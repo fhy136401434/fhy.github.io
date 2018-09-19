@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/9 | 个人博客</title>
+  <title>vue-cli项目中获取微信授权 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2018/09/index.html">
+  <meta name="description" content="1、引入微信js-sdk1npm install weixin-js-sdk --save 2、项目中使用1import wx from &apos;weixin-js-sdk&apos; 3、具体开始使用具体代码如下： 1、template模板 123456789101112131415161718192021222324252627282930313233343536373839&amp;lt;template&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue-cli项目中获取微信授权">
+<meta property="og:url" content="http://yoursite.com/2018/03/10/article-title-1/index.html">
 <meta property="og:site_name" content="个人博客">
+<meta property="og:description" content="1、引入微信js-sdk1npm install weixin-js-sdk --save 2、项目中使用1import wx from &apos;weixin-js-sdk&apos; 3、具体开始使用具体代码如下： 1、template模板 123456789101112131415161718192021222324252627282930313233343536373839&amp;lt;template&amp;gt;">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-19T07:31:35.408Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人博客">
+<meta name="twitter:title" content="vue-cli项目中获取微信授权">
+<meta name="twitter:description" content="1、引入微信js-sdk1npm install weixin-js-sdk --save 2、项目中使用1import wx from &apos;weixin-js-sdk&apos; 3、具体开始使用具体代码如下： 1、template模板 123456789101112131415161718192021222324252627282930313233343536373839&amp;lt;template&amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -150,49 +154,173 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-article-title-1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/10/hello-world/" class="archive-article-date">
-  	<time datetime="2018-09-10T08:34:30.793Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/10/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      vue-cli项目中获取微信授权
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2018/03/10/article-title-1/" class="archive-article-date">
+  	<time datetime="2018-03-10T06:25:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、引入微信js-sdk"><a href="#1、引入微信js-sdk" class="headerlink" title="1、引入微信js-sdk"></a>1、引入微信js-sdk</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install weixin-js-sdk --save</span><br></pre></td></tr></table></figure>
+<h3 id="2、项目中使用"><a href="#2、项目中使用" class="headerlink" title="2、项目中使用"></a>2、项目中使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import wx from <span class="string">'weixin-js-sdk'</span></span><br></pre></td></tr></table></figure>
+<h3 id="3、具体开始使用"><a href="#3、具体开始使用" class="headerlink" title="3、具体开始使用"></a>3、具体开始使用</h3><p>具体代码如下：</p>
+<p>1、template模板</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div class=<span class="string">"wraper"</span>&gt;</span><br><span class="line">        &lt;loadmore :height=<span class="string">"height"</span> @loadBottom=<span class="string">"loadBottom"</span> @loadTop=<span class="string">"loadTop"</span> ref=<span class="string">"loadmores"</span>&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                &lt;div class=<span class="string">"box"</span>&gt;</span><br><span class="line">                    &lt;mt-swipe :auto=<span class="string">"2000"</span>&gt;</span><br><span class="line">                        &lt;mt-swipe-item v-for=<span class="string">"(item, index) in items"</span> :key=<span class="string">"item.id"</span>&gt;</span><br><span class="line">                            &lt;img :src=<span class="string">"item.url"</span> class=<span class="string">"img"</span> @click=<span class="string">"banner(index)"</span>/&gt;</span><br><span class="line">                        &lt;/mt-swipe-item&gt;</span><br><span class="line">                    &lt;/mt-swipe&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">                &lt;!--店铺列表--&gt;</span><br><span class="line">                &lt;div class=<span class="string">"listWarper"</span> v-for=<span class="string">"(item, index) in list"</span> :key=<span class="string">"index"</span>&gt;</span><br><span class="line">                    &lt;div class=<span class="string">"listBox clearfix"</span> @click=<span class="string">"shopInfo(item.shopNum, item.customerNum)"</span>&gt;</span><br><span class="line">                        &lt;div class=<span class="string">"boxLeft"</span>&gt;</span><br><span class="line">                            &lt;img :src=<span class="string">"item.customerLogo"</span>&gt;</span><br><span class="line">                        &lt;/div&gt;</span><br><span class="line">                        &lt;div class=<span class="string">"boxRight"</span>&gt;</span><br><span class="line">                            &lt;div class=<span class="string">"boxRightTop"</span>&gt;</span><br><span class="line">                                &lt;div class=<span class="string">"clearfix"</span>&gt;</span><br><span class="line">                                    &lt;div class=<span class="string">"boxRightTopName"</span>&gt;</span><br><span class="line">                                        &#123;&#123;item.shopName&#125;&#125;</span><br><span class="line">                                    &lt;/div&gt;</span><br><span class="line">                                    &lt;div class=<span class="string">"boxRightTopDistant"</span>&gt;</span><br><span class="line">                                        &#123;&#123;item.distance&#125;&#125;</span><br><span class="line">                                    &lt;/div&gt;</span><br><span class="line">                                &lt;/div&gt;</span><br><span class="line">                                &lt;div class=<span class="string">"boxIntroduce"</span>&gt;</span><br><span class="line">                                    &lt;div class=<span class="string">"boxVarieties"</span> v-if=<span class="string">"item.shopAddress"</span>&gt;&#123;&#123;item.shopAddress&#125;&#125;&lt;/div&gt;</span><br><span class="line">                                    &lt;div class=<span class="string">"boxVarieties"</span> v-if=<span class="string">"item.industryName"</span>&gt;&#123;&#123;item.industryName&#125;&#125;&lt;/div&gt;</span><br><span class="line">                                &lt;/div&gt;</span><br><span class="line">                            &lt;/div&gt;</span><br><span class="line">                        &lt;/div&gt;</span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line">                &lt;/div&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;/loadmore&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+<p>2、script部分（核心）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    import wx from <span class="string">'weixin-js-sdk'</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">export</span> default &#123;</span><br><span class="line">        <span class="function"><span class="title">data</span></span>() &#123;</span><br><span class="line">            <span class="built_in">return</span> &#123;</span><br><span class="line">                height: <span class="string">'calc(100vh - 1rem)'</span>,</span><br><span class="line">                name: <span class="string">'111'</span>,</span><br><span class="line">                items: [&#123;</span><br><span class="line">                    title: <span class="string">'图片1'</span>,</span><br><span class="line">                    url: require(<span class="string">'../../assets/imgs/home_banner.jpg'</span>)</span><br><span class="line">                &#125;, &#123;</span><br><span class="line">                    title: <span class="string">'图片2'</span>,</span><br><span class="line">                    url: require(<span class="string">'../../assets/imgs/home_banner.jpg'</span>)</span><br><span class="line">                &#125;],</span><br><span class="line">                lat: <span class="string">''</span>,</span><br><span class="line">                lng: <span class="string">''</span>,</span><br><span class="line">                pageNum: 1,//页码</span><br><span class="line">                loader: <span class="literal">true</span>,</span><br><span class="line">                list: [],//数据</span><br><span class="line">                allLoaded: <span class="literal">false</span>,</span><br><span class="line">                bottomStatus: <span class="string">''</span>,</span><br><span class="line">                wrapperHeight: 0,</span><br><span class="line">                topStatus: <span class="string">''</span>,</span><br><span class="line">                translate: 0,</span><br><span class="line">                moveTranslate: 0,</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="function"><span class="title">created</span></span>() &#123;</span><br><span class="line">            //授权获取数据</span><br><span class="line">            this.getNearInfo();</span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;</span><br><span class="line">            banner(index) &#123;</span><br><span class="line">                console.log(`banner<span class="variable">$&#123;index&#125;</span>`);</span><br><span class="line">            &#125;,</span><br><span class="line">            shopInfo(shopNum, customerNum) &#123;</span><br><span class="line">                this.<span class="variable">$router</span>.push(&#123;path: <span class="string">'/shopList/shopInfo'</span>,query: &#123;shopNum,customerNum&#125;&#125;)</span><br><span class="line">            &#125;,</span><br><span class="line">            //上拉加载</span><br><span class="line">            <span class="function"><span class="title">loadBottom</span></span>() &#123;</span><br><span class="line">                this.<span class="variable">$refs</span>.loadmores.onBottomLoaded();</span><br><span class="line">                <span class="keyword">if</span> (!this.loader) <span class="built_in">return</span>;</span><br><span class="line">                <span class="built_in">let</span> params = &#123;</span><br><span class="line">                    pageSize: 10,</span><br><span class="line">                    currentPage: this.pageNum,</span><br><span class="line">                    mapLat: this.lat,</span><br><span class="line">                    mapLng: this.lng</span><br><span class="line">                &#125;</span><br><span class="line">                this.getNearList(params);</span><br><span class="line">            &#125;,</span><br><span class="line">            //下拉刷新</span><br><span class="line">            <span class="function"><span class="title">loadTop</span></span>() &#123;</span><br><span class="line">                this.loader = <span class="literal">true</span>;</span><br><span class="line">                this.pageNum = 1;</span><br><span class="line">                this.<span class="variable">$refs</span>.loadmores.onTopLoaded();</span><br><span class="line">                <span class="built_in">let</span> params = &#123;</span><br><span class="line">                    currentPage: this.pageNum,</span><br><span class="line">                    pageSize: 10,</span><br><span class="line">                    mapLat: this.lat,</span><br><span class="line">                    mapLng: this.lng</span><br><span class="line">                &#125;</span><br><span class="line">                this.getNearList(params)</span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="function"><span class="title">getNearInfo</span></span>() &#123;</span><br><span class="line">                <span class="built_in">let</span> _this = this,</span><br><span class="line">                infoParameter = &#123;</span><br><span class="line">                    requestUrl: encodeURIComponent(window.location.href.split(<span class="string">"#"</span>)[0])</span><br><span class="line">                &#125;</span><br><span class="line">                //先从后台获取后面需要配置的微信信息</span><br><span class="line">                this.<span class="variable">$http</span>.getNearInfo(infoParameter).<span class="keyword">then</span>(res =&gt; &#123;</span><br><span class="line">                    <span class="keyword">if</span>(res.result == <span class="string">'success'</span>) &#123;</span><br><span class="line">                        <span class="built_in">let</span> data = res.data,</span><br><span class="line">                            appId = data.appId,</span><br><span class="line">                            nonceStr = data.nonceStr,</span><br><span class="line">                            timestamp = data.timestamp,</span><br><span class="line">                            signature = data.signature;</span><br><span class="line">                        //根据后台返回的配置信息进行配置</span><br><span class="line">                        wx.config(&#123;</span><br><span class="line">                            debug: <span class="literal">false</span>,               //必填，<span class="literal">true</span>为调试模式，已alert形式弹出</span><br><span class="line">                            appId: appId,               // 必填，公众号的唯一标识</span><br><span class="line">                            timestamp: timestamp,       // 必填，生成签名的时间戳</span><br><span class="line">                            nonceStr: nonceStr,         // 必填，生成签名的随机串</span><br><span class="line">                            signature: signature,       // 必填，签名</span><br><span class="line">                            jsApiList: [<span class="string">'showOptionMenu'</span>,</span><br><span class="line">                                        <span class="string">'onMenuShareTimeline'</span>,</span><br><span class="line">                                        <span class="string">'onMenuShareAppMessage'</span>,</span><br><span class="line">                                        <span class="string">'getLocation'</span>]  // 必填，需要使用的JS接口列表</span><br><span class="line">                        &#125;);</span><br><span class="line">                        //开始获取用户的位置信息</span><br><span class="line">                        wx.ready(() =&gt; &#123;</span><br><span class="line">                            wx.getLocation(&#123;</span><br><span class="line">                                <span class="built_in">type</span>: <span class="string">'gcj02'</span>, //默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入<span class="string">'gcj02'</span></span><br><span class="line">                                success: <span class="keyword">function</span> (res) &#123;</span><br><span class="line">                                    //用户点击同意授权的回调函数</span><br><span class="line">                                    _this.lat = res.latitude; // 纬度</span><br><span class="line">                                    _this.lng = res.longitude; // 经度</span><br><span class="line">                                    //list请求</span><br><span class="line">                                    <span class="built_in">let</span> params = &#123;</span><br><span class="line">                                        currentPage: _this.pageNum,</span><br><span class="line">                                        pageSize: 10,</span><br><span class="line">                                        mapLat: _this.lat,</span><br><span class="line">                                        mapLng: _this.lng</span><br><span class="line">                                    &#125;</span><br><span class="line">                                    //获取列表信息</span><br><span class="line">                                    _this.getNearList(params)</span><br><span class="line"></span><br><span class="line">                                &#125;,</span><br><span class="line">                                cancel: <span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">                                    //用户点击拒绝授权的回调函数，设置默认位置（天安门）</span><br><span class="line">                                    _this.lat = 39.9219;</span><br><span class="line">                                    _this.lng = 116.44355;</span><br><span class="line">                                    <span class="built_in">let</span> params = &#123;</span><br><span class="line">                                        currentPage: _this.pageNum,</span><br><span class="line">                                        pageSize: 10,</span><br><span class="line">                                        mapLat: _this.lat,</span><br><span class="line">                                        mapLng: _this.lng</span><br><span class="line">                                    &#125;</span><br><span class="line">                                    //获取列表信息</span><br><span class="line">                                    _this.getNearList(params)</span><br><span class="line">                                &#125;,</span><br><span class="line">                                error: <span class="keyword">function</span>(err)&#123;</span><br><span class="line">                                    console.log(<span class="string">'err'</span>, err);</span><br><span class="line">                                &#125;</span><br><span class="line">                            &#125;);</span><br><span class="line">                        &#125;)</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;).catch(err =&gt; &#123;</span><br><span class="line">                    console.log(err);</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;,</span><br><span class="line">            getNearList(params) &#123;</span><br><span class="line">                <span class="built_in">let</span> pageNum = this.pageNum;</span><br><span class="line">                <span class="keyword">if</span> (!this.loader) <span class="built_in">return</span>;</span><br><span class="line">                this.<span class="variable">$http</span>.getNearList(params).<span class="keyword">then</span>(res =&gt; &#123;</span><br><span class="line">                    <span class="keyword">if</span> (res.result == <span class="string">'success'</span>) &#123;</span><br><span class="line">                        <span class="built_in">let</span> data = res.data,</span><br><span class="line">                            lister = data.list,</span><br><span class="line">                            list = this.list,</span><br><span class="line">                            l = lister.length;</span><br><span class="line">                        <span class="keyword">if</span> (pageNum &gt; 1) &#123;</span><br><span class="line">                            list = [...list, ...lister];</span><br><span class="line">                        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                            list = lister;</span><br><span class="line">                        &#125;</span><br><span class="line">                        this.list = list;</span><br><span class="line">                        <span class="keyword">if</span> (l &lt; 10) &#123;</span><br><span class="line">                            this.loader = <span class="literal">false</span>;</span><br><span class="line">                        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                            this.pageNum = (pageNum + 1);</span><br><span class="line">                            this.loader = <span class="literal">true</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;).catch(err =&gt; &#123;</span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>3、css部分</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">&lt;style lang=<span class="string">"scss"</span> scoped&gt;</span><br><span class="line">    .wraper &#123;</span><br><span class="line">        height: calc(100vh - 1rem);</span><br><span class="line">        overflow-y: auto;</span><br><span class="line">        overflow-x: hidden;</span><br><span class="line">        .box &#123;</span><br><span class="line">            overflow: hidden;</span><br><span class="line">            width: 100%;</span><br><span class="line">            height: 3rem;</span><br><span class="line">            img &#123;</span><br><span class="line">                width: 100%;</span><br><span class="line">                height: 3rem;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        .listBox &#123;</span><br><span class="line">            width: 93%;</span><br><span class="line">            margin: 0 auto;</span><br><span class="line">            background: <span class="comment">#fff;</span></span><br><span class="line">            position: relative;</span><br><span class="line">            border-bottom: solid <span class="comment">#e6e6e6 1px;</span></span><br><span class="line">            padding: .26rem 0;</span><br><span class="line">            .boxLeft &#123;</span><br><span class="line">                width: 20%;</span><br><span class="line">                height: 1.26rem;</span><br><span class="line">                <span class="built_in">float</span>: left;</span><br><span class="line">                img &#123;</span><br><span class="line">                    width: 1.26rem;</span><br><span class="line">                    height: 1.26rem;</span><br><span class="line">                    border: solid <span class="comment">#e8e8e8 1px;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            .boxRight &#123;</span><br><span class="line">                width: 80%;</span><br><span class="line">                <span class="built_in">float</span>: left;</span><br><span class="line">                font-size: .3rem;</span><br><span class="line">                .boxRightTop &#123;</span><br><span class="line">                    width: 100%;</span><br><span class="line">                    height: 1.28rem;</span><br><span class="line">                    .boxRightTopName &#123;</span><br><span class="line">                        <span class="built_in">float</span>: left;</span><br><span class="line">                        line-height: .3rem;</span><br><span class="line">                        padding: .1rem 0;</span><br><span class="line">                        font-weight: bold;</span><br><span class="line">                        font-size: .3rem;</span><br><span class="line">                        overflow: hidden;</span><br><span class="line">                        text-overflow: ellipsis;</span><br><span class="line">                        white-space: nowrap;</span><br><span class="line">                    &#125;</span><br><span class="line">                    .boxRightTopDistant &#123;</span><br><span class="line">                        <span class="built_in">float</span>: right;</span><br><span class="line">                        height: .3rem;</span><br><span class="line">                        line-height: .3rem;</span><br><span class="line">                        font-size: .26rem;</span><br><span class="line">                        font-weight: bolder;</span><br><span class="line">                        color: <span class="comment">#aeaeae;</span></span><br><span class="line">                    &#125;</span><br><span class="line">                    .boxIntroduce &#123;</span><br><span class="line">                        width: 100%;</span><br><span class="line">                        height: .78rem;</span><br><span class="line">                        .boxVarieties &#123;</span><br><span class="line">                            display: inline-block;</span><br><span class="line">                            max-width: 1.2rem;</span><br><span class="line">                            line-height: .78rem;</span><br><span class="line">                            font-size: .24rem;</span><br><span class="line">                            overflow: hidden;</span><br><span class="line">                            text-overflow: ellipsis;</span><br><span class="line">                            white-space: nowrap;</span><br><span class="line">                            color: <span class="comment">#aeaeae;</span></span><br><span class="line">                            padding-right: .2rem;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/03/10/article-title-1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/09/10/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/01/05/article-title/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js深拷贝</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -215,8 +343,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
